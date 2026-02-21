@@ -1,0 +1,27 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-or-disable-css-animations-and-transitions-that-cause-visible-blinking-or-flashing-effects-throughout-the-application-identify-and-eliminate-fade-in-animations-loading-state-transitions-or-any-other-animated-effects-that-create-a-flickering-appearance",
+      "featureTitle": "Remove or disable CSS animations and transitions that cause visible blinking or flashing effects throughout the application. Identify and eliminate fade-in animations, loading state transitions, or any other animated effects that create a flickering appearance.",
+      "files": [
+        "frontend/src/components/ChatMessage.tsx",
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

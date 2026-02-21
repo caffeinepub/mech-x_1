@@ -1,0 +1,40 @@
+{
+  "kind": "build_request",
+  "title": "Fix site blinking/flashing issue",
+  "projectName": "MECH X",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "text": "Remove or disable CSS animations and transitions that cause visible blinking or flashing effects throughout the application. Identify and eliminate fade-in animations, loading state transitions, or any other animated effects that create a flickering appearance.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-final"
+        ],
+        "quotes": [
+          "ok stop the blinking of the site"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All visible blinking, flashing, or flickering effects are eliminated",
+        "Page loads and transitions appear smooth without rapid visual changes",
+        "Loading states and UI updates occur without creating a strobing effect",
+        "The site maintains visual stability during user interactions and data fetching"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not remove essential loading states or user feedback mechanisms",
+    "Preserve the overall visual design and layout structure"
+  ],
+  "nonGoals": [
+    "Redesigning the UI theme or color scheme",
+    "Changing backend logic or data handling",
+    "Modifying authentication flows"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

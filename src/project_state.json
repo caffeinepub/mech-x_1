@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "MECH X - AI-powered automotive assistance system providing car breakdown troubleshooting and mechanic recommendations",
+  "architectural_notes": [
+    "Web/mobile responsive chat interface",
+    "AI engine with NLU for car-specific diagnostics",
+    "Location module using GPS or IP-based detection",
+    "Secure admin dashboard with restricted access",
+    "Database storing car models, issue-solution mappings, mechanic details",
+    "Role-based authentication with auto-redirect for non-admin users",
+    "Encrypted data storage for user and mechanic information",
+    "Admin login system with session management and protected routes"
+  ],
+  "known_issues": [
+    "Site experiences blinking/flashing behavior"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-implement-a-chat-interface-where-users-can-describe-car-issues-and-receive-responses-the-chat-must-support-continuous-conversation-display-message-history-and-provide-a-text-input-field-for-user-queries",
+      "title": "Implement a chat interface where users can describe car issues and receive responses. The chat must support continuous conversation, display message history, and provide a text input field for user queries.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-admin-dashboard-page-accessible-only-to-users-with-admin-role-the-dashboard-must-display-a-list-of-all-mechanics-and-provide-forms-to-add-new-mechanics-edit-existing-mechanic-details-and-delete-mechanic-records",
+      "title": "Create an admin dashboard page accessible only to users with admin role. The dashboard must display a list of all mechanics and provide forms to add new mechanics, edit existing mechanic details, and delete mechanic records.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-location-based-mechanic-recommendation-feature-request-user-s-location-permission-capture-coordinates-and-query-the-backend-for-nearby-mechanics-sorted-by-proximity-display-mechanic-cards-showing-name-contact-details-specialization-rating-and-distance",
+      "title": "Implement location-based mechanic recommendation feature. Request user's location permission, capture coordinates, and query the backend for nearby mechanics sorted by proximity. Display mechanic cards showing name, contact details, specialization, rating, and distance.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-routing-logic-that-directs-admin-users-to-the-admin-dashboard-after-authentication-and-regular-users-to-the-chat-interface-include-navigation-to-switch-between-admin-dashboard-and-chat-for-admin-users",
+      "title": "Implement routing logic that directs admin users to the admin dashboard after authentication and regular users to the chat interface. Include navigation to switch between admin dashboard and chat for admin users.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-visual-theme-for-mech-x-using-an-automotive-inspired-color-palette-with-warm-accent-colors-such-as-orange-red-or-yellow-paired-with-neutral-grays-and-blacks-apply-consistent-typography-with-bold-headings-for-impact-and-clear-hierarchy-create-a-modern-professional-layout-with-card-based-components-and-prominent-call-to-action-elements",
+      "title": "Design a cohesive visual theme for MECH X using an automotive-inspired color palette with warm accent colors (such as orange, red, or yellow) paired with neutral grays and blacks. Apply consistent typography with bold headings for impact and clear hierarchy. Create a modern, professional layout with card-based components and prominent call-to-action elements.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-the-overall-ui-design-with-improved-visual-styling-including-refined-spacing-typography-scale-component-shadows-hover-states-transitions-and-micro-interactions-apply-consistent-animation-timing-and-easing-curves-throughout-the-application-to-create-a-polished-professional-feel",
+      "title": "Enhance the overall UI design with improved visual styling including refined spacing, typography scale, component shadows, hover states, transitions, and micro-interactions. Apply consistent animation timing and easing curves throughout the application to create a polished, professional feel.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-admin-authorization-protection-for-the-admin-dashboard-add-authentication-checks-that-require-users-to-log-in-with-internet-identity-before-accessing-admin-features-display-a-login-prompt-or-redirect-unauthenticated-users-attempting-to-access-the-admin-dashboard",
+      "title": "Implement admin authorization protection for the admin dashboard. Add authentication checks that require users to log in with Internet Identity before accessing admin features. Display a login prompt or redirect unauthenticated users attempting to access the admin dashboard.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-visual-feedback-and-loading-states-throughout-the-application-including-skeleton-loaders-for-data-fetching-spinner-indicators-for-form-submissions-and-disabled-states-for-buttons-during-async-operations-ensure-users-always-know-when-the-system-is-processing-their-actions",
+      "title": "Add visual feedback and loading states throughout the application including skeleton loaders for data fetching, spinner indicators for form submissions, and disabled states for buttons during async operations. Ensure users always know when the system is processing their actions.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-or-disable-css-animations-and-transitions-that-cause-visible-blinking-or-flashing-effects-throughout-the-application-identify-and-eliminate-fade-in-animations-loading-state-transitions-or-any-other-animated-effects-that-create-a-flickering-appearance",
+      "title": "Remove or disable CSS animations and transitions that cause visible blinking or flashing effects throughout the application. Identify and eliminate fade-in animations, loading state transitions, or any other animated effects that create a flickering appearance.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "AI chatbot for car troubleshooting with NLU support",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Location-based mechanic finder with GPS/mapping integration",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Admin dashboard with CRUD operations for mechanic data",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Role-based authentication system (admin vs user)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Database for car models, issues, and mechanic details",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Create backend data structures to store car troubleshooting knowledge including car make, model, year, common issues, and corresponding solutions. Implement methods to query this data based on user input.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Implement a mechanic database in the backend that stores mechanic information including name, contact details, physical location (latitude/longitude), specialization, and ratings. Provide CRUD operations for managing mechanic records.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Implement role-based authentication system with two user roles: admin and regular user. Store user role information and provide methods to check user permissions.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Implement chatbot logic that processes user queries about car issues, extracts car make/model/year and problem description from natural language input, queries the troubleshooting database, and returns relevant solutions and mechanical guidance.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Enhance UI design with improved styling, animations, and visual hierarchy",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Implement admin authentication/authorization system with login required for admin dashboard access",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Fix site blinking/flashing issue",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "MECH X",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
